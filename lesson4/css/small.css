@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital,wght@0,600;1,800&display=swap');
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+
+img{
+  max-width: 100%;
+}
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: black;
+}
+.columns{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+section{
+  text-align: center;
+  padding: 10px;
+}
+.home-content, a, p{
+  font-family: 'Open Sans', sans-serif;
+  color : black;
+}
+/*CHANGE TEXT COLOR????????????????????????ABOVE AND IN H1...????*/
+
+body {
+    background-color: #EDDBDB;
+}
+footer, header{
+    background-color: #6D749C;
+    border-radius: 10px;
+    padding: 5px;
+/*     margin: 0 auto; */
+    text-align: center;
+}
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr; 
+}
+header #logo{
+  width: 150px;
+  grid-column: 2 / 3;
+}
+header #header-text{
+  grid-column: 4 / 4;
+}
+/* img {
+  max-width: 10%;
+} */
+.home-content{
+  margin: 0 auto;
+  margin-left: 60px;
+  padding: 10px;
+}
+body{
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+.navbar li  {
+/*         display: none; */
+        margin:0;
+/*         font-size: 1.5rem; */
+        text-align: center;
+}
+    
+.navbar li a{       
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    color: #5D606F;
+  
+    }
+.navbar{ 
+  padding:0;
+  margin:0;}
+nav{
+    text-align: center;
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: #EAB8AE;
+}
+
+.navbar li:first-child{
+    display: block;
+}
+.responsive li{
+    display:block;
+}
+nav ul.hide{
+  display: none;
+}
+
+nav ul{
+   list-style-type: none;
+}
+
+
+
+
+
