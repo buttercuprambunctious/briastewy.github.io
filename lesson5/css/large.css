@@ -1,0 +1,11 @@
+@media only screen and (min-width: 60em) {
+  nav ul#navbar li {
+      width: 300px;
+  }
+    header, main, p, .navbar{
+      font-size: 1.2em;
+    }
+#wSGrid p{
+  font-size: 1em;
+}
+  }
