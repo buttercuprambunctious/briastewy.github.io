@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital,wght@0,600;1,800&display=swap');
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+
+img{
+  max-width: 100%;
+}
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: black;
+}
+.columns{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+section{
+  text-align: center;
+  padding: 10px;
+}
+.home-content, a, p{
+  font-family: 'Open Sans', sans-serif;
+  color : black;
+}
+/*CHANGE TEXT COLOR????????????????????????ABOVE AND IN H1...????*/
+
+body {
+    background-color: #EDDBDB;
+}
+#pancake{
+    background-color: #ffeeb8;
+    font-family: 'Open Sans', sans-serif, serif;
+   text-align: center; 
+   padding: 1em;
+   font-size: 1.5em;
+}
+
+footer, header{
+    background-color: #6D749C;
+    border-radius: 10px;
+    padding: 5px;
+/*     margin: 0 auto; */
+    text-align: center;
+}
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr; 
+}
+header #logo{
+  width: 150px;
+  grid-column: 2 / 3;
+}
+header #header-text{
+  grid-column: 4 / 4;
+}
+/* img {
+  max-width: 10%;
+} */
+.home-content{
+  margin: 0 auto;
+  margin-left: 60px;
+  padding: 10px;
+}
+body{
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+.navbar li  {
+/*         display: none; */
+        margin:0;
+/*         font-size: 1.5rem; */
+        text-align: center;
+}
+    
+.navbar li a{       
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    color: #5D606F;
+  
+    }
+.navbar{ 
+  padding:0;
+  margin:0;}
+nav ul li a:hover{
+    color: #5D606F;
+}
+
+  nav{
+    text-align: center;
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: #EAB8AE;
+}
+
+.navbar li:first-child{
+    display: block;
+}
+.responsive li{
+    display:block;
+}
+nav ul.hide{
+  display: none;
+}
+
+nav ul{
+   list-style-type: none;
+}
+/* nav ul li.activesite {
+  background-color: yellow;
+  color: orangered;
+} */
+.fiveDay{
+  display: none;
+}
+.article{
+  background-color: #EAB8AE;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.article p{
+  font-size: 1em;
+  padding: 20px;
+  text-align: left;
+}
+.article img{
+  max-width: 60%;
+  float: top;
+  margin: 0 auto;
+  padding: 20px;
+}
+.weatherSummary{
+  position: relative;
+  max-width: 550px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.opt_size{
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  color: red;
+}
+#medium_opt{
+  display: none;
+}
+#large_opt{
+  display: none;
+}
+
+#sunset{
+  max-width: 100%;
+  position: relative;
+}
+#wSGrid{
+    position: absolute;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 25px 25px 25px 25px 25px;
+    margin: 0 auto;
+    text-align: center;
+    top: 15px;
+    left: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#EDDBDB;
+  }
+  .wSGrid img{
+    max-width: 100px;
+  }
+#summaryTitle{
+  margin-top: -7px;
+  grid-row: 1/2;
+  grid-column: 1/3;
+
+  margin-bottom: 0px;
+}
+.weatherAttribute{
+  text-align: right;
+  margin-top: -10px;
+}
+.weatherInfo{
+  text-align: left;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+#currently{
+  grid-row: 2/3;
+  grid-column:1/2;
+}
+#temperature{
+  grid-row: 3/4;
+  grid-column:1/2;
+}
+#humidity{
+  grid-row: 4/5;
+  grid-column:1/2;
+}
+#precipitation{
+  grid-row: 5/6;
+  grid-column:1/2;
+}
+#windSpeed{
+  grid-row: 6/7;
+  grid-column:1/2;
+}
+#current{
+  grid-row: 2/3;
+  grid-column:2/3;
+}
+#temp{
+  grid-row: 3/4;
+  grid-column:2/3;
+}
+#humid{
+  grid-row: 4/5;
+  grid-column:2/3;
+}
+#precip{
+  grid-row: 5/6;
+  grid-column:2/3;
+}
+#wind{
+  grid-row: 6/7;
+  grid-column:2/3;
+}
+.favi img{
+  max-width: 30px;
+}
+#contactText{
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+.contactInfo #prestonMap{
+  display: none;
+}
