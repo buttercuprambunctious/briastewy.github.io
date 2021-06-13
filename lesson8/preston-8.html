@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang = "en-us">
+  <head>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+<body>
+  <div id= "pancake">  Saturday = Pancakes in the Park!!! 9 am this Saturday at Preston Park!
+  </div>
+  <header>
+    <img id="logo" src="images/iconfinder_weather-12_1530381.png" alt="logo" /> 
+    <div id = "head-text">
+    <h1>
+    Forecast Friend
+    </h1>
+    <h2>
+      Not just your fair-weather-friend
+    </h2>
+  </div>
+  </header>
+    
+  <nav class = "navigate">
+    <button onclick="toggleMenu()">Menu</button>
+     <ul id="navbar" class="hide">
+      <li><a href = "preston-8.html">Home</a></li>
+      <li><a href = " " target="blank">Preston</a></li>
+      <li><a href = " " target="blank">Soda Springs</a></li>
+      <li><a href = " " target="blank">Fish Haven</a></li>
+      <li><a href = " " target="blank">Storm Center</a></li>
+      <li><a href = "gallery-8.html">Gallery</a></li>
+     </ul>
+  </nav>  
+
+  <main>
+    <h2>
+      Preston Idaho 
+    </h2>
+    <div class = weatherSummary>
+      <picture>
+        <source srcset = "images/clouds_med.jpg" media = "(min-width: 580px) and (max-width: 799px)">
+        <source srcset = "images/clouds_big.jpg" media = "(min-width: 800px)">
+        <img src = "images/clouds_small.jpg" alt = "Small cloud" id = "sunset">
+      </picture>
+      <h3 class = "opt_size" id = "small_opt">Small</h3>
+      <h3 class = "opt_size" id = "medium_opt">Medium</h3>
+      <h3 class = "opt_size" id = "large_opt">Large</h3>
+      <!-- <img src= "images\pexels-photo-1544880.jpeg" alt="farm image" id = "sunset"> -->
+    <section id = "wSGrid">
+      <h2 class = "summaryText" id = "summaryTitle">Weather Summary</h2>
+      <div class="weatherAttribute" id="currently"><p>Currently:</p></div>
+      <div class="weatherAttribute" id="temperature"><p>Temperature:</p></div>
+      <div class="weatherAttribute" id="humidity"><p>Humidity:</p></div>
+      <div class="weatherAttribute" id="windSpeed"><p>Wind Speed:</p></div>
+      <div class="weatherAttribute" id="precipitation"><p>Wind Chill:</p></div>
+
+
+      <div class="weatherInfo" id="current"><p>Tornado</p></div>
+      <div class="weatherInfo" id="temp"><p><span id = "tempNum">10</span>&deg;F </p></div>
+      <div class="weatherInfo" id="humid"><p>90% </p></div>
+      <div class="weatherInfo" id="precip"><p><span id = "chillNum"> </span></p></div>
+      <div class="weatherInfo" id="wind"><p><span id = "windNum">50</span> mph</p></div>
+      
+    </section>
+  </div>
+    
+    <div class = "fiveDay">
+      <h2>5 Day Forecast</h2>
+      <div id = forecastGrid>
+        <div class = "theDay" id = "1day">Friday</div>
+        <div class = "theDay" id = "2day">Saturday</div>
+        <div class = "theDay" id = "3day">Sunday</div>
+        <div class = "theDay" id = "4day">Monday</div>
+        <div class = "theDay" id = "5day">Tuesday</div>
+
+        <div class = "weatherImg" id = 1WeatherImg><img src = "images/stormy.png" alt = "stormy"></div>
+        <div class = "weatherImg" id = 2WeatherImg><img src = "images/stormy.png" alt = "stormy"></div>
+        <div class = "weatherImg" id = 3WeatherImg><img src = "images/stormy.png" alt = "stormy"></div>
+        <div class = "weatherImg" id = 4WeatherImg><img src = "images/stormy.png" alt = "stormy"></div>
+        <div class = "weatherImg" id = 5WeatherImg><img src = "images/stormy.png" alt = "stormy"></div>
+
+        <div class= "tempText" >69 &deg;F</div>
+        <div class= "tempText" >51 &deg;F</div>
+        <div class= "tempText" >57 &deg;F</div>
+        <div class= "tempText" >64 &deg;F</div>
+        <div class= "tempText" >62 &deg;F</div>
+
+
+      </div>
+         
+    </div>
+    <div class = "article">
+      <img src = "images/smol-pot8.jpeg" alt = "potato">
+      <h2 class= "artText">Cute lil' Potates</h1>
+      <h3 class= "artText"> By: Potato Pete</h2>
+      <p class= "artText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+         sunt in culpa nqui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    <div class = "contactInfo">    
+    <img id = "prestonMap" src = "images/prestonMap.png" alt = "map of preston">
+    <div id = "contactText">
+      <h2>Preston Idaho Area</h2>
+      <ul>
+        <li>123 Weather Rd</li>
+        <li>Preston, ID 83263</li>
+        <li><br></li>
+        <li>&#9742; 1-234-567-8910</li>
+        <li>&#9993; preston.weather@preston.com</li>
+        <li>
+          <a target ="_blank" href = "facebook.com" class = "favi" >
+            <img src = "images/facebookFavi.png">
+          </a>
+          <a target ="_blank" href = "pinterest.com" class = "favi">
+            <img src = "images/pinterestFavi.png">
+          </a>
+          <a target ="_blank" href = "instagram.com" class = "favi">
+            <img src = "images/instagramFavi.png">
+          </a>
+          <a target ="_blank" href = "twitter.com" class = "favi">
+            <img src = "images/twitterFavi.jpg">
+          </a>
+
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+  </main>
+
+  <footer>
+        <p>&copy; 2021|Bria Stewart|California|<a href="https://www.byui.edu/online"> BYUI Online Learning</a><br>
+    </p>
+  </footer>
+  
+  <script src = "js/script.js"></script>
+  <script src = "js/windchill.js"></script>
+</body>
+  
+  
+</html>
