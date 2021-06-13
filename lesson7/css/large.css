@@ -1,0 +1,41 @@
+@media only screen and (min-width: 60em) {
+  nav ul#navbar li {
+      width: 300px;
+  }
+    header, main, p, .navbar{
+      font-size: 1.2em;
+    }
+#wSGrid p{
+  font-size: 1em;
+}
+#large_opt{
+  display: flex;
+}
+#medium_opt{
+  display: none;
+}
+#galleryGrid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.wSGrid img{
+    max-width: 500px;
+}
+
+.weatherSummary{
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/* #galleryGrid:hover picture{
+  box-shadow: 0 0 35px #6D749C;
+  background-color:rgb(220, 176, 221);
+} */
+
+#galleryGrid picture:hover{
+  box-shadow: 0 0 35px #6D749C;
+  background-color:rgb(220, 176, 221);
+}
+}
