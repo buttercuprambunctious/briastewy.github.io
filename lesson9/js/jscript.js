@@ -19,6 +19,7 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     for (let i = 0; i < citiesToUse.length; i++ ) {
         let card = document.createElement('section');
+        let info = document.createElement('div');
         let h2 = document.createElement('h2');
         let motto = document.createElement('p');
         let yearFounded = document.createElement('p');
@@ -36,12 +37,16 @@ fetch(requestURL)
         yearFounded.textContent = ("Year Founded: " + towns[citiesToUse[i]].yearFounded);
         population.textContent = ("Population: " + towns[citiesToUse[i]].currentPopulation);
         rainfall.textContent = ("Annual Rainfall: " + towns[citiesToUse[i]].averageRainfall + "\"");
-        card.appendChild(h2);
-        card.appendChild(motto);
-        card.appendChild(yearFounded);
-        card.appendChild(population);
-        card.appendChild(rainfall);
+        info.appendChild(h2);
+        info.appendChild(motto);
+        info.appendChild(yearFounded);
+        info.appendChild(population);
+        info.appendChild(rainfall);
+        info.setAttribute("class", "data");
+        card.appendChild(info);
         card.appendChild(image);
+        card.setAttribute("class", "townsGrid");
+
         document.querySelector('div.cityCards').appendChild(card);
     }
   });

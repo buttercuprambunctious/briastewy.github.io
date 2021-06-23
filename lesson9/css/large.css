@@ -1,6 +1,6 @@
 @media only screen and (min-width: 60em) {
   nav ul#navbar li {
-      width: 300px;
+      max-width: 300px;
   }
     header, main, p, .navbar{
       font-size: 1.2em;
@@ -37,5 +37,25 @@
 #galleryGrid picture:hover{
   box-shadow: 0 0 35px #6D749C;
   background-color:rgb(220, 176, 221);
+}
+ 
+
+.cityCards{
+	display: flex;
+	flex-wrap: wrap; 
+}
+.townsGrid{
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+	flex-direction: column;
+  max-width: 16em;
+  /* background-color: red; */
+}
+.townsGrid img {
+  
+  margin-top: auto;
+}
+main{
+  max-width: 90em;
 }
 }

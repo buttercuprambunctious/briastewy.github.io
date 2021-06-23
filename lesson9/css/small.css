@@ -267,7 +267,7 @@ max-width: 100%;
 }
 
 
-.cityCards{
+.townsGrid{
   display: grid;
   text-align: center;
   margin: 0 auto;
@@ -275,67 +275,21 @@ max-width: 100%;
   grid-template-columns: 1fr;
   background-color: rgba(108, 154, 255, 0.63);
   max-width: 100%;
-  
 }
-.cityCards h2{
-  font-family: 'Open Sans', sans-serif;
-}
-.cityCards h1{
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-}
-.cityCards p{
+.townsGrid data{
   font-family: 'Open Sans', sans-serif;
 }
 
-.cityCards section{
+
+.townsGrid section{
   background-color:rgb(255, 255, 255);
   padding:10px;
 }
-.cityCards section img{
+.townsGrid img{
   max-width: 100%;
   margin: 0 auto;
   box-shadow: rgb(255, 255, 255) 0 0 10px 5px;
   padding: 5px;
+  vertical-align: text-bottom;
 }
 
-@media only screen and (min-width:35em) {
-  .cityCards{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      /* padding: 1rem; */
-      max-width: 60em;
-  }
-  .cityCards img{
-    grid-column: 1;
-  }
-  .cityCards p, h2{
-    grid-column: 2;
-  }
-  
-
-  /* .cityCards section:nth-child(odd) img{
-      max-width: 90%;
-      vertical-align: text-bottom;
-      grid-column: 2;
-  }
-  .cityCards section:nth-child(odd) h2, p{
-    grid-column: 1;
-  } */
-
-  .cityCards section{
-      margin: 0 auto;
-      max-width: 30em;
-  }
-  
-}
-@media only screen and (min-width:65em) {
-  .cityCards{
-      grid-template-columns: 1fr 1fr 1fr;
-      max-width: 90em;
-  }
-  .cityCards section{
-      margin: 0 auto;
-      max-width: 60em;
-  }
-}

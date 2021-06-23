@@ -1,4 +1,4 @@
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 45em){
 
   nav button{
     display: none;
@@ -95,5 +95,24 @@ img{
 #galleryGrid {
   grid-template-columns: 1fr 1fr;
 }
+.townsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* padding: 1rem; */
+  max-width: 60em;
+  
+  gap: 1rem;
+}
+.townsGrid img{
+grid-column: 1 / 2;
+grid-row: 1;
+}
+.townsGrid data {
+grid-column: 2 / 3;
+grid-row: 1;
+}
+
+
+
 }
 
