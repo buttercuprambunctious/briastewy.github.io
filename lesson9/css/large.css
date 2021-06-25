@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 63em) {
   nav ul#navbar li {
       max-width: 300px;
   }
@@ -52,7 +52,6 @@
   /* background-color: red; */
 }
 .townsGrid img {
-  
   margin-top: auto;
 }
 main{
