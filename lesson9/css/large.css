@@ -5,6 +5,11 @@
     header, main, p, .navbar{
       font-size: 1.2em;
     }
+
+    body {
+      margin: 1;
+    }
+
 #wSGrid p{
   font-size: 1em;
 }
