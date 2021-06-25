@@ -12,7 +12,9 @@ else{
     day.style.display = "none";
 }
 
-
+//var date = new Date();
+//document.getElementById("year").innerHTML = date.getFullYear();
+document.getElementById("output").innerHTML = "Last Updated " + document.lastModified;
 
 
 const imgOptions = {
