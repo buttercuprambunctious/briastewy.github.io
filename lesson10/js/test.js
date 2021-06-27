@@ -18,6 +18,11 @@ var daysInWeek = [
 "day5"
 ];
 
+for (i = 0; i < 5; i++){
+  document.getElementById(daysInWeek[i]).innerHTML = weekday[(d.getDay() + i) % 7];
+}
+
+
 const apiURL="https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ac9d47f7be2891297b6b3957a163e7a2&units=imperial";
 fetch(apiURL)
   .then((response) => response.json())
