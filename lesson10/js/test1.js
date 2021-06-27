@@ -11,7 +11,6 @@ fetch(apiURLW)
   for (let i = 1; i < fiveDaysTemp.length + 1; i++) {
     var forecast = fiveDaysTemp[i - 1];
     var tempNum = "temp" + i;
-    var forecastDate = new Date(forecast.dt_txt);
     document.getElementById(tempNum).textContent =  Math.round(forecast.main.temp);
 
   }});
