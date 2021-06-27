@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang = "en-us">
+  <head>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+<body>
+  <div id= "pancake">  Saturday = Pancakes in the Park!!! 9 am this Saturday at Preston Park!
+  </div>
+  <header>
+    <img id="logo" src="images/iconfinder_weather-12_1530381.png" alt="logo" /> 
+    <div id = "head-text">
+    <h1>
+    Forecast Friend
+    </h1>
+    <h2>
+      Not just your fair-weather-friend
+    </h2>
+  </div>
+  </header>
+    
+  <nav class = "navigate">
+    <button onclick="toggleMenu()">Menu</button>
+     <ul id="navbar" class="hide">
+      <li><a href = "index.html">Home</a></li>
+      <li><a href = "preston-9.html" target="blank">Preston</a></li>
+      <li><a href = " " target="blank">Soda Springs</a></li>
+      <li><a href = " " target="blank">Fish Haven</a></li>
+      <li><a href = "stormcenter.html" target="blank">Storm Center</a></li>
+      <li><a href = "gallery-9.html">Gallery</a></li>
+     </ul>
+  </nav>  
+
+    <main>
+        <div id = "stormyMan">
+      <h1>Storm Center</h1>
+      <legend>Contact Information</legend>
+        <form method="get" action="thanks.html" class="grid">
+            <fieldset>
+                <label>Full Name:<br>
+                    <input type="text" name="fullName" required pattern="[A-Za-z ]{5,}" >
+                </label><br>
+                <label>Email:<br>
+                    <input type="email" name="email" required placeholder="preston@email.org"></label><br>
+                </label>
+                <label>Phone:<br>
+                    <input type="tel" name="phone" required placeholder="###-###-####">
+                </label><br>
+                <label for="zip">Zip Code:<br>
+                    <input type="text" id="zip" name="zip" required pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep">
+                </label><br>
+            </fieldset>
+            <legend>Storm Information</legend>
+    <form method="post" action="#" class="grid">
+        <fieldset>
+            <label>Date of Storm:<br>
+                <input type="date" name="theDate">
+            </label><br>
+            <label>Storm Type:<br>
+                <input name="stormType" list="stormList" required></label>
+            <datalist id="stormList">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Tornado">
+                <option value="Thunderstorm">
+            </datalist>
+            <br>
+            <label class="flexly" for="severity">Severity: &nbsp;&nbsp;&nbsp;
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </label>
+    
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist><br>
+            <label>
+                <select name="locations" id="selectLocation" onchange="selectResponse()" required>
+                    <option value="" disabled selected>Select Region...</option>
+                    <option value="Preston">Preston</option>
+                    <option value="SodaSprings">Soda Springs</option>
+                    <option value="FishHaven">Fish Haven</option>
+                </select></label><br><br><br><br><br><br>
+                <fieldset class="nestedfieldset">
+                    <legend>Are you in danger? <em>(Choose one)</em></legend>
+                    <div class="selection">
+                        <input type="radio" id="dangeryes" name="danger" value="yes" checked> 
+                        <label for="dangerYes">Yes</label>
+                    </div>
+                    <div class="selection">
+                        <input type="radio" id="dangerNo" name="danger" value="no">
+                        <label for="dangerNo">No</label>
+                    </div>
+                    <div class="selection">
+                        <input type="radio" id="dangerMaybe" name="danger" value="maybe">
+                        <label for="dangerMaybe">Maybe</label>
+                    </div>
+                </fieldset>
+                <br>
+        <label for="info">Additional Information:</label><br>
+        <textarea id="info" name="info" rows="5" cols="35"></textarea>
+        <br>
+        <input type="submit" value="Send Report">
+            </fieldset>
+
+        
+        </form>
+    </div>
+    </main>
+
+    
+
+
+
+  <footer>
+    <p>&copy; 2021|Bria Stewart|California|<a href="https://www.byui.edu/online"> BYUI Online Learning</a><br>
+    <p>Days since last visit: <span id="lastVisit"></span></p>
+</p>
+</footer>
+
+<script src = "js/script.js"></script>
+</body>
+
+
+</html>

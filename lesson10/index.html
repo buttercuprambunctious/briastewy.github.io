@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang = "en-us">
+  <head>
+    <title>Index Home</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+<body>
+  <div id= "pancake">  Saturday = Pancakes in the Park!!! 9 am this Saturday at Preston Park!
+  </div>
+  <header>
+    <img id="logo" src="images/iconfinder_weather-12_1530381.png" alt="logo" /> 
+    <div id = "head-text">
+    <h1>
+    Forecast Friend
+    </h1>
+    <h2>
+      Not just your fair-weather-friend
+    </h2>
+  </div>
+  </header>
+    
+  <nav class = "navigate">
+    <button onclick="toggleMenu()">Menu</button>
+     <ul id="navbar" class="hide">
+      <li><a href = "index.html">Home</a></li>
+      <li><a href = "preston-9.html">Preston</a></li>
+      <li><a href = " " target="blank">Soda Springs</a></li>
+      <li><a href = " " target="blank">Fish Haven</a></li>
+      <li><a href = "stormcenter.html">Storm Center</a></li>
+      <li><a href = "gallery-9.html">Gallery</a></li>
+     </ul>
+  </nav>  
+
+    <main>
+    <div class = "cityCards"></div>
+    <div class = "article">
+        <img src = "images/smol-pot8.jpeg" alt = "potato">
+        <h2 class= "artText">Cute lil' Potates</h2>
+        <h3 class= "artText"> By: Potato Pete</h3>
+        <p class= "artText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+           sunt in culpa nqui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+</main>
+
+  
+<footer>
+    <p>&copy; 2021|Bria Stewart|California|<a href="https://www.byui.edu/online"> BYUI Online Learning</a><br></p>
+    <p>Days since last visit: <span id="lastVisit"></span></p>
+    <p><span id="output"></span></p>
+
+</footer>
+
+<script src = "js/script.js"></script>
+<script src = "js/jscript.js"></script>
+
+<script> document.getElementById("output").innerHTML = "Last Updated " + document.lastModified;</script>
+</body>
+
+
+</html>

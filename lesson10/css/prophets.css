@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital,wght@0,600;1,800&display=swap');
+
+.cards{
+    display: grid;
+    text-align: center;
+    margin: 0 auto;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    background-color: rgba(108, 154, 255, 0.63);
+    max-width: 100%;
+    
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+    background-color:rgb(255, 255, 255);
+    padding:10px;
+}
+section img{
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: rgb(255, 255, 255) 0 0 10px 5px;
+    padding: 5px;
+}
+
+@media only screen and (min-width:35em) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        max-width: 60em;
+    }
+    section img{
+        max-width: 90%;
+        vertical-align: text-bottom;
+    }
+
+    section{
+        margin: 0 auto;
+        max-width: 30em;
+    }
+    
+}
+@media only screen and (min-width:65em) {
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 90em;
+    }
+    section{
+        margin: 0 auto;
+        max-width: 60em;
+    }
+}
+

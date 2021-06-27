@@ -1,0 +1,65 @@
+@media only screen and (min-width: 63em) {
+  nav ul#navbar li {
+      max-width: 300px;
+  }
+    header, main, p, .navbar{
+      font-size: 1.2em;
+    }
+
+    body {
+      margin: 1;
+    }
+
+#wSGrid p{
+  font-size: 1em;
+}
+#large_opt{
+  display: flex;
+}
+#medium_opt{
+  display: none;
+}
+#galleryGrid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.wSGrid img{
+    max-width: 500px;
+}
+
+.weatherSummary{
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/* #galleryGrid:hover picture{
+  box-shadow: 0 0 35px #6D749C;
+  background-color:rgb(220, 176, 221);
+} */
+
+#galleryGrid picture:hover{
+  box-shadow: 0 0 35px #6D749C;
+  background-color:rgb(220, 176, 221);
+}
+ 
+
+.cityCards{
+	display: flex;
+	flex-wrap: wrap; 
+}
+.townsGrid{
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+	flex-direction: column;
+  max-width: 16em;
+  /* background-color: red; */
+}
+.townsGrid img {
+  margin-top: auto;
+}
+main{
+  max-width: 90em;
+}
+}
